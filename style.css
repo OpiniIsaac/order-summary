@@ -1,0 +1,91 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+:root{
+
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+
+
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display",sans-serif;
+}
+body{
+         display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--Paleblue);
+    border-radius: 8px;
+
+}
+main{
+      position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background-color: var(--Verypaletblue);
+    height: 596px;
+    width: 350px;
+    border-radius: 8px;
+
+}
+img {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+h2{
+    margin: 10px 0;
+}
+p{
+    margin: 10px 0;
+}
+.subscription{
+    display: flex;
+align-items: center;
+
+}
+
+.subscription > img{
+    margin-right: 10px;
+}
+.subText{
+    margin-right: 100px;
+}
+a:hover{
+    text-decoration: none;
+}
+button{
+    width: 100%;
+    border: none;
+
+}
+.payment{
+background-color: var(--Brightblue);
+height: 50px;
+border-radius: 10px;
+color: var(--Paleblue);
+margin-bottom: 10px;
+}
+.payment:hover{
+    background-color: var(--Desaturatedblue);
+    cursor: pointer;
+}
+.order{
+height: 50px;
+border-radius: 10px;
+}
+.order:hover{
+cursor: pointer;
+
+}
